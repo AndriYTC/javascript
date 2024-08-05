@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB ANAK KECIK</title>
+    <link rel="stylesheet" href="style.css">
+    <script lang="javascript" src="js/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>PPDB TK</h1>
+    <form id="formku">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="nisn">NISN:</label>
+        <input type="text" id="nisn" name="nisn" required>
+      </div>
+      <div class="form-group">
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="tgl_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+      </div>
+      <div class="form-group">
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin">
+          <option value="">Pilih Jenis Kelamin</option>
+          <option value="L">Laki-laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" value="cek" onclick="validasi()">Daftar</button>
+    </form>
+    <footer>&copy;copyright 2024</footer>
+  </div>
+</body>
+</html>
